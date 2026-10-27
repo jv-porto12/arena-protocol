@@ -18,6 +18,8 @@ func _physics_process(delta: float) -> void:
 		player.global_position
 	)
 	
+	global_position += direction * move_speed * delta
+	
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		GameManager.add_score(score_value)
