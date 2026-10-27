@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dvffnuhumcsre"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_udn2f"]
+size = Vector2(128, 128)
+
+[node name="Player" type="CharacterBody2D" unique_id=845267894]
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=623969635]
+position = Vector2(521, 226)
+color = Color(0.19742912, 0.42848164, 1, 1)
+polygon = PackedVector2Array(-127.99998, 9.536743e-07, 2.2888184e-05, 9.536743e-07, 2.2888184e-05, 127.999985, -127.99998, 127.999985)
+uv = PackedVector2Array(-352, 40, -224, 40, -224, 167.99998, -352, 167.99998)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1945607170]
+position = Vector2(457, 290)
+shape = SubResource("RectangleShape2D_udn2f")
