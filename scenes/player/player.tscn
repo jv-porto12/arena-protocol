@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://dvffnuhumcsre"]
 
+[ext_resource type="Script" uid="uid://b5evs6lo32my3" path="res://scripts/player.gd" id="1_8afob"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_udn2f"]
 size = Vector2(128, 128)
 
 [node name="Player" type="CharacterBody2D" unique_id=845267894]
+script = ExtResource("1_8afob")
 
 [node name="Polygon2D" type="Polygon2D" parent="." unique_id=623969635]
 position = Vector2(521, 226)
