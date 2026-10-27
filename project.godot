@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ArenaProtocol"
-run/main_scene="uid://dvffnuhumcsre"
+run/main_scene="uid://cuxlrlr57t0xo"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

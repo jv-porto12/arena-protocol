@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cuxlrlr57t0xo"]
+
+[ext_resource type="PackedScene" uid="uid://dvffnuhumcsre" path="res://scenes/player/player.tscn" id="1_nha0i"]
+[ext_resource type="Script" uid="uid://di02i36bouenl" path="res://scenes/main/main.gd" id="1_q24mn"]
+[ext_resource type="Script" uid="uid://ca76p4piawmx2" path="res://scripts/factories/EnemyFactory.gd" id="2_q24mn"]
+
+[node name="Main" type="Node2D" unique_id=319317457]
+script = ExtResource("1_q24mn")
+
+[node name="Player" parent="." unique_id=845267894 instance=ExtResource("1_nha0i")]
+
+[node name="EnemyFactory" type="Node" parent="." unique_id=572234145]
+script = ExtResource("2_q24mn")
+
+[node name="Enemies" type="Node2D" parent="." unique_id=576920205]
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=1466437417]
+wait_time = 2.0
+autostart = true
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1115938593]
+
+[node name="ScoreLabel" type="Label" parent="HUD" unique_id=1211482179]
+offset_left = 28.0
+offset_top = 20.0
+offset_right = 168.0
+offset_bottom = 43.0
+text = "Score: 0"

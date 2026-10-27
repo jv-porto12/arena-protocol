@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_udn2f"]
 size = Vector2(128, 128)
 
-[node name="Player" type="CharacterBody2D" unique_id=845267894]
+[node name="Player" type="CharacterBody2D" unique_id=845267894 groups=["player"]]
 script = ExtResource("1_8afob")
 
 [node name="Polygon2D" type="Polygon2D" parent="." unique_id=623969635]
