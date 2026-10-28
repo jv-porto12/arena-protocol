@@ -15,7 +15,9 @@ func execute() -> void:
 	
 	beacon_parent.add_child(beacon_instance)
 	
-	beacon_instance.global_position = beacon_position
+	beacon_instance.position = beacon_parent.to_local(
+		beacon_position
+	)
 	
 func undo() -> void:
 	if is_instance_valid(beacon_instance):

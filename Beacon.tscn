@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://dpwglw0rgv1um"]
 
 [node name="Beacon" type="Node2D" unique_id=35326569]
+rotation = 0.7853982
+scale = Vector2(2, 2)
 
 [node name="Polygon2D" type="Polygon2D" parent="." unique_id=289733692]
-position = Vector2(-1, 1)
+position = Vector2(49.14393, -9.545944)
 scale = Vector2(2, 2)
 color = Color(0.9253379, 0.9253379, 3.080368e-06, 1)
 polygon = PackedVector2Array(-8.000002, 2.3841858e-07, -1.9073486e-06, 2.3841858e-07, 1.9073486e-06, 8, -8.000002, 8)

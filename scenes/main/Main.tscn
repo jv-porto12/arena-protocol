@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dvffnuhumcsre" path="res://scenes/player/player.tscn" id="1_nha0i"]
 [ext_resource type="Script" uid="uid://di02i36bouenl" path="res://scenes/main/main.gd" id="1_q24mn"]
 [ext_resource type="Script" uid="uid://ca76p4piawmx2" path="res://scripts/factories/EnemyFactory.gd" id="2_q24mn"]
+[ext_resource type="Script" uid="uid://gxoav2uto11s" path="res://scripts/managers/CommandManager.gd" id="4_gyg6b"]
 
 [node name="Main" type="Node2D" unique_id=319317457]
 script = ExtResource("1_q24mn")
@@ -26,3 +27,8 @@ offset_top = 20.0
 offset_right = 168.0
 offset_bottom = 43.0
 text = "Score: 0"
+
+[node name="Beacons" type="Node2D" parent="." unique_id=340116368]
+
+[node name="CommandManager" type="Node" parent="." unique_id=1035486088]
+script = ExtResource("4_gyg6b")
