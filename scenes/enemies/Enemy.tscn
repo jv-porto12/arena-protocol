@@ -9,11 +9,11 @@ size = Vector2(128, 128)
 script = ExtResource("1_hpe7p")
 
 [node name="Polygon2D" type="Polygon2D" parent="." unique_id=1467393378]
-position = Vector2(521, 226)
+position = Vector2(128, 0)
 color = Color(0.73981565, 0, 0, 1)
 polygon = PackedVector2Array(-127.99998, 9.536743e-07, 2.2888184e-05, 9.536743e-07, 2.2888184e-05, 127.999985, -127.99998, 127.999985)
 uv = PackedVector2Array(-127.99998, 9.536743e-07, 2.2888184e-05, 9.536743e-07, 2.2888184e-05, 127.999985, -127.99998, 127.999985)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=649297388]
-position = Vector2(457, 290)
+position = Vector2(64, 64)
 shape = SubResource("RectangleShape2D_cxkw2")

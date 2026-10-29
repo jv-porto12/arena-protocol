@@ -21,15 +21,18 @@ func create_enemy(
 		EnemyType.NORMAL:
 			enemy.move_speed = 100.0
 			enemy.score_value = 10
+			enemy.modulate = Color("#FF2020")
 			
 		EnemyType.FAST:
 			enemy.move_speed = 180.0
 			enemy.score_value = 20
+			enemy.modulate = Color("#B22222")
 			
 		EnemyType.TANK:
 			enemy.move_speed = 50.0
 			enemy.score_value = 30
-			
+			enemy.modulate = Color("#600018")
+
 	enemy.position = spawn_position
 		
 	return enemy

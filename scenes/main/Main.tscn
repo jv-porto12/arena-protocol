@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://di02i36bouenl" path="res://scenes/main/main.gd" id="1_q24mn"]
 [ext_resource type="Script" uid="uid://ca76p4piawmx2" path="res://scripts/factories/EnemyFactory.gd" id="2_q24mn"]
 [ext_resource type="Script" uid="uid://gxoav2uto11s" path="res://scripts/managers/CommandManager.gd" id="4_gyg6b"]
+[ext_resource type="Script" uid="uid://06lyi4a0crg" path="res://addons/arena_wave_spawner/wave_spawner.gd" id="5_dc040"]
 
 [node name="Main" type="Node2D" unique_id=319317457]
 script = ExtResource("1_q24mn")
@@ -14,10 +15,6 @@ script = ExtResource("1_q24mn")
 script = ExtResource("2_q24mn")
 
 [node name="Enemies" type="Node2D" parent="." unique_id=576920205]
-
-[node name="SpawnTimer" type="Timer" parent="." unique_id=1466437417]
-wait_time = 2.0
-autostart = true
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=1115938593]
 
@@ -32,3 +29,9 @@ text = "Score: 0"
 
 [node name="CommandManager" type="Node" parent="." unique_id=1035486088]
 script = ExtResource("4_gyg6b")
+
+[node name="WaveSpawner" type="Node" parent="." unique_id=1358271257]
+script = ExtResource("5_dc040")
+enemy_factory_path = NodePath("../EnemyFactory")
+enemy_container_path = NodePath("../Enemies")
+metadata/_custom_type_script = "uid://06lyi4a0crg"
