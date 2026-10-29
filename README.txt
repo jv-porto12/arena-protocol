@@ -29,4 +29,3 @@ Developer: John-Vincent Porto
 Student ID: 100971747
 Role: Solo Dev; everything
 Contribution: 100%
-
