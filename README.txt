@@ -1,5 +1,8 @@
 --- Arena Protocol ---
 
+***YOUTUBE LINK FOR VIDEO REPORT***:
+https://youtu.be/-kbJguMFzjs
+
 Course: INFR 3110U Game Engine Design
 Engine: Godot 4.7.2
 Language: GD Script
